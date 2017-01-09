@@ -1,0 +1,269 @@
+/* CSS declarations go here */
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$font-bungee: 'Bungee', sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+html, body {
+	background-color: #FFFFFF;
+	font-family: $font-roboto;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.page-container {
+	position: relative;
+	height: auto;
+	min-height: 100%;
+}
+
+/* Top Banner Bar */
+.banner {
+	display: flex;
+	justify-content: space-between;
+	margin: auto 20px;
+	.titleCard {
+		a {
+			font-family: $font-bungee;
+			font-size: 40px;
+			text-decoration: none;
+			color: #E2711D;
+		}
+	}
+	.top-nav {
+		ul {
+			li {
+				list-style: none;
+				display: inline-block;
+				margin-left: 20px;
+				/* dropdown button */
+				.dropdown {
+					position: relative;
+					display: inline-block;
+					.dropbtn {
+				    cursor: pointer;
+					}
+					.dropdown-content {
+						display: none;
+						position: absolute;
+						ul {
+							padding-left: 0px;
+							li {
+								display: flex;
+								a {
+									display: block;
+								}
+							}
+						}
+					}
+				}
+				a {
+					font-family: $font-bungee;
+					font-size: 16px;
+					text-decoration: none;
+					color: #231F20;
+				}
+				a:hover {
+					color: #E2711D;
+				}
+				a.dropbtn:focus {
+					color: #E2711D;
+				}
+			}
+		}
+	}
+}
+
+/*Yielded Area*/
+.yielded {
+	padding-bottom: 100px;
+}
+
+/* Footer Bar */
+.footerBar {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+	background-color: #FFFFFF;
+	color: #231F20;
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	.contactBlock {
+		margin: 8px;
+		p {
+			color: #373737;
+			font-size: 14px;
+			font-weight: bold;
+			letter-spacing: .5px;
+			margin: 0;
+		}
+	}
+}
+
+/* **END OF FRAMEWORK** */
+
+
+
+
+/*
+LANDING PAGE
+*/
+
+.infoArea {
+	background-image: url(/images/bar.jpg);
+	background-size: cover;
+	background-position: 0% 100%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(244, 244, 244, 0.8);
+  color: #231F20;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .clinkFrame {
+  	margin-top: 10px;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	font-size: 3em;
+  	p {
+  		font-family: $font-bungee;
+  		margin-top: -10px;
+  	}
+  }
+  .ourPerks {
+  	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: space-around;
+  	.imgFrame{
+  		display: flex;
+  		flex-direction: column;
+  		align-items: center;
+  		-webkit-box-shadow: 3px 3px 0px 0px rgba(255,164,150,1);
+  		-moz-box-shadow: 3px 3px 0px 0px rgba(255,164,150,1);
+			box-shadow: 3px 3px 0px 0px rgba(255,164,150,1);
+	  	img {
+	  		max-width: 300px;
+	  		height: 200px;
+	  		object-fit: cover;
+	  	}
+	  }
+  }
+}
+
+
+
+/*
+ABOUT PAGE
+*/
+
+.allAboutUs {
+	background-image: url(/images/pubinside.jpg);
+	background-size: cover;
+	background-position: 0% 100%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(255, 205, 197, 0.8);
+
+  color: #231F20;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 500px;
+	.brewersFrame {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		-webkit-box-shadow: 3px 3px 0px 0px rgba(76,84,84,1);
+  	-moz-box-shadow: 3px 3px 0px 0px rgba(76,84,84,1);
+		box-shadow: 3px 3px 0px 0px rgba(76,84,84,1);
+		height: 275px;
+		width: 425px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.history {
+		max-width: 50%;
+	}
+}
+
+
+/*
+ABOUT US PAGE
+*/
+
+.contact-page {
+
+	height: 500px;
+	background-image: url(/images/countryside.jpg);
+	background-size: cover;
+	background-position: 0% 100%;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(76, 84, 84, 0.8);
+
+  color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	.map-frame {
+		width: 450px;
+		height: 400px;
+		iframe {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.form-column {
+		width: 450px;
+		#name, #email {
+			width: 70%;
+		}
+		textarea {
+			width: 70%;
+			height: 100px;
+			resize: none;
+		}
+	}
+}
+
+
+/*
+BREWS PAGE
+*/
+
+.brewRow {
+	display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  .brewFrame {
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	-webkit-box-shadow: 3px 3px 0px 0px rgba(255,164,150,1);
+  	-moz-box-shadow: 3px 3px 0px 0px rgba(255,164,150,1);
+		box-shadow: 3px 3px 0px 0px rgba(255,164,150,1);
+		img {
+			height: 200px;
+			width: 300px;
+			object-fit: cover;
+		}
+  }
+}
+
+
+
+
+
+
+
+
+
+

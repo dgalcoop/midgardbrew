@@ -1,0 +1,59 @@
+<template name="home">
+  <div class="page-container">
+    <div class="banner">
+      <div class="titleCard">
+        <a href="{{pathFor route='landingPage'}}"><span>Midgard Brew</span></a>
+      </div>
+      <div class="top-nav">
+        <ul>
+          <li><a href="{{pathFor route='landingPage'}}">Home</a></li>
+          <li><a href="{{pathFor route='about'}}">About</a></li>
+          <li><a href="{{pathFor route='contact'}}">Contact</a></li>
+          <li>
+            <div class="dropdown">
+              <a href="#" class="dropbtn">Brews</a>
+              <div id="brewDropdown" class="dropdown-content">
+                <ul>
+                  <li><a>Imperial Stout</a></li>
+                  <li><a>Doppelbock</a></li>
+                  <li><a>Dunkelweisen</a></li>
+                  <li><a>Double IPA</a></li>
+                  <li><a>Marzen</a></li>
+                  <li><a>Saison</a></li>
+                  <li><a>Weissbier</a></li>
+                  <li><a>Blonde Ale</a></li>
+                  <li><a>Witbier</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li><a href="{{pathFor route='menu'}}">Menu</a></li>
+          <li><a href="#">Events</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="yielded">
+      {{> yield}}
+    </div>
+
+    <div class="footerBar">
+      <div class="contactBlock">
+        <p>Hours<br>
+        Mon-Wed: 10am-10pm<br>
+        Thurs-Sat: 10am-2am<br>
+        Sun: 10am-5pm<br>
+        Happy Hour: 4-6pm M-F</p>
+      </div>
+      <div class="contactBlock">
+        <p>Midgard Brew<br>
+        987 Circle Ave<br>
+        Ipswich, NC 00001</p>
+      </div>
+      <div class="contactBlock">
+        <p>Email: midgardbrew@gmail.com<br>
+        Phone: (545) 687-5785</p>
+      </div>
+    </div>
+  </div>
+</template>
